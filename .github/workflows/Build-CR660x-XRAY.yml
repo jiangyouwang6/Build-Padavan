@@ -1,5 +1,5 @@
 #修改TNAME: NEWIFI3 中的NEWIFI3为你需要编译的型号，注意名称要与configs/templates/目录下的名字相同
-name: Build PADAVAN XRAY NEWIFI3
+name: Build PADAVAN XRAY CR660x
 
 on:
   workflow_dispatch:
@@ -51,8 +51,8 @@ jobs:
 
     - name: Build Firmware
       env:
-        #TNAME: Newifi-d2
-        TNAME: NEWIFI3
+        #TNAME: XIAOMI
+        TNAME: CR660x
       run: |
         cd /opt/rt-n56u/trunk
         if [ ! -f configs/templates/$TNAME.config ] ; then
