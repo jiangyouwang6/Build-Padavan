@@ -7,8 +7,7 @@ on:
       repourl:
         description: 'padavan repo url'
         required: true
-        default: 'h
-https://github.com/flowlife/padavan-4.4.git'
+        default: 'https://github.com/flowlife/padavan-4.4.git'
         
   #  branches: 
   #    - master
