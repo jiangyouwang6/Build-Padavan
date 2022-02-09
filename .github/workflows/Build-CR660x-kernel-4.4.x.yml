@@ -1,5 +1,5 @@
-#修改TNAME: NEWIFI3 中的NEWIFI3为你需要编译的型号，注意名称要与configs/templates/目录下的名字相同
-name: Build PADAVAN 4.4  CR660x-KVR
+#修改TNAME: CR660x 中的CR660x为你需要编译的型号，注意名称要与configs/templates/目录下的名字相同
+name: Build PADAVAN 4.4内核  CR660x-KVR
 
 on:
   workflow_dispatch:
