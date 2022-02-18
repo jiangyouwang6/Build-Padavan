@@ -1,5 +1,5 @@
 #修改TNAME: NEWIFI3 中的NEWIFI3为你需要编译的型号，注意名称要与configs/templates/目录下的名字相同
-name: Build PADAVAN 3.4内核 Newifi3
+name: Build PADAVAN 4.4内核 Newifi
 
 on:
   workflow_dispatch:
@@ -7,7 +7,7 @@ on:
       repourl:
         description: 'padavan repo url'
         required: true
-        default: 'https://github.com/flowlife/rt-n56u.git'
+        default: 'https://github.com/flowlife/padavan-4.4.git'
         
   #  branches: 
   #    - master
@@ -52,7 +52,7 @@ jobs:
     - name: Build Firmware
       env:
         #TNAME: Newifi-d2
-        TNAME: NEWIFI3
+        TNAME: NEWIFI
       run: |
         cd /opt/rt-n56u/trunk
         if [ ! -f configs/templates/$TNAME.config ] ; then
